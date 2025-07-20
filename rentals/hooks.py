@@ -117,13 +117,15 @@ app_license = "mit"
 # -----------
 # Permissions evaluated in scripted ways
 
-# permission_query_conditions = {
-# 	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
-# }
-#
-# has_permission = {
-# 	"Event": "frappe.desk.doctype.event.event.has_permission",
-# }
+permission_query_conditions = {
+	# "Ride Booking": "rentals.rentals.doctype.ride_booking.ride_booking.driver_permission_query_conditions",
+	"Ride Order": "rentals.rentals.doctype.ride_order.ride_order.driver_permission_query_conditions",
+}
+
+has_permission = {
+	# "Ride Booking": "rentals.rentals.doctype.ride_booking.ride_booking.driver_has_permission",
+	"Ride Order": "rentals.rentals.doctype.ride_order.ride_order.driver_has_permission",
+}
 
 # DocType Class
 # ---------------

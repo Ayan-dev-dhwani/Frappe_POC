@@ -1,7 +1,7 @@
 // Copyright (c) 2025, Shubham and contributors
 // For license information, please see license.txt
 frappe.ui.form.on("Ride Booking", {
-
+    
     rate(frm) {
         frm.trigger("update_total_amount")
         console.log(frm.doc.rate)

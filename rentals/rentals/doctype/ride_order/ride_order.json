@@ -10,10 +10,11 @@
   "contact_number",
   "pickup_time",
   "vehicle",
+  "driver_name",
   "column_break_qnix",
   "status",
   "pickup_address",
-  "geolocation_pxjo"
+  "drop_location"
  ],
  "fields": [
   {
@@ -21,6 +22,7 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Customer Name",
+   "read_only_depends_on": "eval:(doc.driver_name == frappe.session.user || !doc.status)",
    "reqd": 1
   },
   {
@@ -28,6 +30,7 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Contact Number",
+   "read_only_depends_on": "eval:doc.driver_name == frappe.session.user",
    "reqd": 1
   },
   {
@@ -45,6 +48,7 @@
    "fieldtype": "Select",
    "label": "Status",
    "options": "New\nAccepted\nRejected\nCancelled",
+   "read_only_depends_on": "eval:doc.driver_name == frappe.session.user",
    "sort_options": 1
   },
   {
@@ -52,23 +56,35 @@
    "fieldtype": "Small Text",
    "in_list_view": 1,
    "label": "Pickup Address",
+   "read_only_depends_on": "eval:doc.driver_name == frappe.session.user",
    "reqd": 1
   },
   {
    "fieldname": "vehicle",
    "fieldtype": "Link",
    "label": "Vehicle",
-   "options": "Vehicle"
+   "options": "Vehicle",
+   "read_only_depends_on": "eval:doc.driver_name == frappe.session.user"
   },
   {
-   "fieldname": "geolocation_pxjo",
-   "fieldtype": "Geolocation"
+   "fieldname": "drop_location",
+   "fieldtype": "Small Text",
+   "label": "Drop Location",
+   "read_only_depends_on": "eval:doc.driver_name == frappe.session.user",
+   "reqd": 1
+  },
+  {
+   "fieldname": "driver_name",
+   "fieldtype": "Link",
+   "label": "Driver Name",
+   "options": "User",
+   "read_only_depends_on": "eval:doc.driver_name == frappe.session.user"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-18 11:48:00.063091",
+ "modified": "2025-07-20 23:56:46.089523",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Ride Order",
