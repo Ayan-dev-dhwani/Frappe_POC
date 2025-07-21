@@ -160,7 +160,13 @@ fixtures = [
             ["name", "in", ["Driver", "Driver Assignee"]]
         ]
     },
-        {
+    {
+        "dt": "Custom DocPerm",
+        "filters": [
+            ["role", "in", ["Driver", "Driver Assignee"]]
+        ]
+    },
+    {
         "dt": "User",
         "filters": [
             ["name", "in", ["assignee", "Driver"]]
