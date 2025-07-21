@@ -147,6 +147,15 @@ has_permission = {
 # 	}
 # }
 
+fixtures = [
+    {
+        "dt": "Workspace",
+        "filters": [
+            ["name", "in", ["Driver Dashboard", "Driver Assignee Dashboard"]]
+        ]
+    }
+]
+
 # Scheduled Tasks
 # ---------------
 

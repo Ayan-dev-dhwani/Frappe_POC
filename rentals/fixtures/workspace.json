@@ -1,0 +1,189 @@
+[
+ {
+  "charts": [],
+  "content": "[{\"id\":\"ABw8sy6e-j\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Driver Dashboard</span>\",\"col\":12}},{\"id\":\"JKLRz9oKz4\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"My Vehicle\",\"col\":4}},{\"id\":\"0AnVwFdMrj\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"My Bookings\",\"col\":5}},{\"id\":\"rBMf0WHeRm\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Accepted Rides\",\"col\":4}},{\"id\":\"paVZFzV2Q6\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Cancelled Rides\",\"col\":4}},{\"id\":\"fmKlfbep_A\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Rejected Rides\",\"col\":4}}]",
+  "custom_blocks": [],
+  "docstatus": 0,
+  "doctype": "Workspace",
+  "for_user": "",
+  "hide_custom": 0,
+  "icon": "",
+  "indicator_color": "",
+  "is_hidden": 0,
+  "label": "Driver Dashboard",
+  "links": [],
+  "modified": "2025-07-20 19:38:09.605944",
+  "module": null,
+  "name": "Driver Dashboard",
+  "number_cards": [
+   {
+    "label": "Accepted Rides",
+    "number_card_name": "Accepted Rides",
+    "parent": "Driver Dashboard",
+    "parentfield": "number_cards",
+    "parenttype": "Workspace"
+   },
+   {
+    "label": "Cancelled Rides",
+    "number_card_name": "Cancelled Rides",
+    "parent": "Driver Dashboard",
+    "parentfield": "number_cards",
+    "parenttype": "Workspace"
+   },
+   {
+    "label": "Rejected Rides",
+    "number_card_name": "Rejected Rides",
+    "parent": "Driver Dashboard",
+    "parentfield": "number_cards",
+    "parenttype": "Workspace"
+   }
+  ],
+  "parent_page": "",
+  "public": 1,
+  "quick_lists": [],
+  "restrict_to_domain": null,
+  "roles": [
+   {
+    "parent": "Driver Dashboard",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "Driver"
+   }
+  ],
+  "sequence_id": 6.0,
+  "shortcuts": [
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "My Vehicle",
+    "link_to": "Vehicle",
+    "parent": "Driver Dashboard",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "My Bookings",
+    "link_to": "Ride Booking",
+    "parent": "Driver Dashboard",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[]",
+    "type": "DocType",
+    "url": null
+   }
+  ],
+  "title": "Driver Dashboard"
+ },
+ {
+  "charts": [],
+  "content": "[{\"id\":\"ABw8sy6e-j\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Driver Dashboard</span>\",\"col\":12}},{\"id\":\"JKLRz9oKz4\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"My Vehicle\",\"col\":4}},{\"id\":\"0AnVwFdMrj\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"My Bookings\",\"col\":5}},{\"id\":\"rBMf0WHeRm\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Accepted Rides\",\"col\":4}},{\"id\":\"paVZFzV2Q6\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Cancelled Rides\",\"col\":4}},{\"id\":\"fmKlfbep_A\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Rejected Rides\",\"col\":4}},{\"id\":\"QoW-y-kUy5\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Pending Rides\",\"col\":4}}]",
+  "custom_blocks": [],
+  "docstatus": 0,
+  "doctype": "Workspace",
+  "for_user": "",
+  "hide_custom": 0,
+  "icon": "",
+  "indicator_color": "",
+  "is_hidden": 0,
+  "label": "Driver Assignee Dashboard",
+  "links": [],
+  "modified": "2025-07-20 23:54:36.330121",
+  "module": "",
+  "name": "Driver Assignee Dashboard",
+  "number_cards": [
+   {
+    "label": "Pending Rides",
+    "number_card_name": "Pending Rides",
+    "parent": "Driver Assignee Dashboard",
+    "parentfield": "number_cards",
+    "parenttype": "Workspace"
+   },
+   {
+    "label": "Accepted Rides",
+    "number_card_name": "Accepted Rides",
+    "parent": "Driver Assignee Dashboard",
+    "parentfield": "number_cards",
+    "parenttype": "Workspace"
+   },
+   {
+    "label": "Cancelled Rides",
+    "number_card_name": "Cancelled Rides",
+    "parent": "Driver Assignee Dashboard",
+    "parentfield": "number_cards",
+    "parenttype": "Workspace"
+   },
+   {
+    "label": "Rejected Rides",
+    "number_card_name": "Rejected Rides",
+    "parent": "Driver Assignee Dashboard",
+    "parentfield": "number_cards",
+    "parenttype": "Workspace"
+   }
+  ],
+  "parent_page": "",
+  "public": 1,
+  "quick_lists": [],
+  "restrict_to_domain": null,
+  "roles": [
+   {
+    "parent": "Driver Assignee Dashboard",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "Driver Assignee"
+   }
+  ],
+  "sequence_id": 6.1,
+  "shortcuts": [
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "My Vehicle",
+    "link_to": "Vehicle",
+    "parent": "Driver Assignee Dashboard",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "My Bookings",
+    "link_to": "Ride Booking",
+    "parent": "Driver Assignee Dashboard",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[]",
+    "type": "DocType",
+    "url": null
+   }
+  ],
+  "title": "Driver Assignee Dashboard"
+ }
+]

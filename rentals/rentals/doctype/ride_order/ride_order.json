@@ -11,10 +11,13 @@
   "pickup_time",
   "vehicle",
   "driver_name",
+  "rate",
   "column_break_qnix",
   "status",
   "pickup_address",
-  "drop_location"
+  "drop_location",
+  "distance",
+  "total_amount"
  ],
  "fields": [
   {
@@ -79,12 +82,30 @@
    "label": "Driver Name",
    "options": "User",
    "read_only_depends_on": "eval:doc.driver_name == frappe.session.user"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "label": "Rate",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "distance",
+   "fieldtype": "Float",
+   "label": "Distance",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-20 23:56:46.089523",
+ "modified": "2025-07-21 12:58:43.059606",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Ride Order",
