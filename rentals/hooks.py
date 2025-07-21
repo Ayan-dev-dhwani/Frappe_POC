@@ -153,6 +153,18 @@ fixtures = [
         "filters": [
             ["name", "in", ["Driver Dashboard", "Driver Assignee Dashboard"]]
         ]
+    },
+    {
+        "dt": "Role",
+        "filters": [
+            ["name", "in", ["Driver", "Driver Assignee"]]
+        ]
+    },
+        {
+        "dt": "User",
+        "filters": [
+            ["name", "in", ["assignee", "Driver"]]
+        ]
     }
 ]
 
